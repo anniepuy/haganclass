@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="education, free education, learning" />
+    <meta name="description" content="haganclass.com is the website for a public middle school technology classroom." />
+    <link rel="stylesheet" href="../css/stylesheet.css"
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hagan Class</title>
+</head>
+<body>
+    <h1>Digital Information Technology</h1>
+    <nav>
+        <!--Top navigation menue-->
+        <a href="../index.html" class="active">About</a>
+        <a href="../word/index.html">Word</a>
+        <a href="index.html">Excel</a>
+        <a href="../powerpoint/index.html">PowerPoint</a>
+        <a href="../calendar.html">Calander</a>
+    </nav>
+    <main>
+        <h2>Excel Formulas and Function References</h2>
+        <p class="objective">Use this page to reference how to set up functions and formulas.</p>
+        <h3><strong>Excel Operators</strong></h3>
+        <ul>
+            <li><strong>Comma , </strong>   Separates more then one cell. Such as (A1, A16). Excel will use only A1 and A16.</li>
+            <li><strong>Colon:</strong>  Creates a range of cells. Excel will look at all the data between the two nameed cells. Such as A1:A16, Excel will use
+                    every cell and data from rows 1-16 in the A column. </li>
+    </ul>
+        <h3><strong>Formulas</strong> : Are basic equations that perform mathmatical calculations in Excel.</h3>
+        <p><strong>References</strong>
+            <table style="width: 100%" border= 1pt solid black; >
+                <tr>
+                    <th><ul>Relative Reference</ul></th>
+                    <th></ul>Abosolute References</ul></th>
+                </tr>
+                <tr>
+                    <th>=A1</th>
+                    <th>=$A$1</th>
+                </tr>
+                <tr>
+                    <th>The referenced cell can change.  The information will change.</th>
+                    <th>The referenced cell cannot change. The information will remain the same</th>                  
+            </table>
+        <p>All formulas start with the <strong>=</strong> sign.</p>
+        <p>When writing out formulas, remember the order of operations: PEMDAS.</p>
+        <ol>
+            <li>Parentheses</li>
+            <li>Exponents</li>
+            <li>Mulitplication</li>
+            <li>Division</li>
+            <li>Addition</li>
+            <li>Subraction</li>
+        </ol>
+        <h3><strong>Functions</strong>: Functions are built-in algorithms that perform complex caluculatios in Excel.</h3>
+        <p>A function has two parts:  the <strong>name</strong> and an <strong>argument.</strong></p>
+        <br>
+        <ul>
+            <li><strong>Function Name:</strong> The name indicated the type of math Excel will perform such as SUM for addition or 
+                AVERAGE to calucate the average number across a range of data.</li>
+            <li><strong>Argument:</strong> The argument is the value that a function uses to perform operations. 
+                This includes numbers, text, cell references, and names. </li>
+        </ul>
+        <p>A function name gives Excel the instruction of what to do.  The arguments are the TOOLS to perform the function. Think of it like playing a sport.  
+            You might play Tennis (Function) and you play with a Racket, Court, Net, and Tennis Ball (Arguments).
+        </p>
+        <p>Here are few examples of functions using the different operators:</p>
+            <table style="width: 100%">
+                <tr>
+                    <th>Example 1:</th>
+                    <th>=SUM(10,20,40)</th>
+                    <th>Adds the numbers 10 + 20 + 40</th>
+                </tr>
+                <tr>
+                    <th>Example 2:</th>
+                    <th>=SUM(A1:A13)</th>
+                    <th>Adds the cells A1 through A13</th>
+                </tr>
+                <tr>
+                    <th>Example 3:</th>
+                    <th>=SUM(A1, B13, C19)</th>
+                    <th>Adds only the cells A1 + B13 + C19</th> 
+                <tr>
+                        <th>Example 4:</th>
+                        <th>=SUM(A1:C19)</th>
+                        <th>Adds all of the cells A1 through C19.</th>                   
+            </table>
+
+        <h3><strong>Creating 3D References</strong></h3>
+        <p>In Excel, you can refere to the same ell or range of cells on muliple sheets. This is called a 3-D reference. 
+            The function will not just look at a singe worksheet, but pull the data from mulitple worksheets into one function or formula. </p>
+            <p>Let's look at an example using the formula <strong>=SUM(SALES:COMMISION!B3)</strong></p>
+        <p><ul>Steps to build a 3-D reference</ul></p>
+        <ol>
+            <li>Click on the cell where you want to enter the function</li>
+            <li>Type = (equal sign), enter the name of the function. In the above example we use SUM.</li>
+            <li>Type an opening paranthesis.</li>
+            <li>Click the tabe for the first worksheet you want to reference.</li>
+            <li>Hold down SHIFT and click the tabe for the last worksheet you want to reference.</li>
+            <li>Select the cell or range of cells that you want to reference.</li>
+            <li>Complet ehe formula and then press ENTER.</li>
+        </ol>
+
+        <h3><strong>Foundation Functions and Formulas</strong></h3>
+        <p><u>IF Formulas</u></p>
+        <p>=IF(A3>300, "Win", "Loose")</p>
+        <p>This is function will display the words "Win" if the entry of A3 is more then or equal to 300.
+                It will display "Loose" if A3 is less then 300.</p>
+        <p>Different IF Functions</p>
+        <ul>
+            <li>SUMIF: will add together cells that match a criteria.</li>
+            <li>AVERAGEIF: will average a range of cells that match a criteria</li>
+        </ul>
+       <br>
+        <p><u>VLOOKUP</u></p>
+        <p>A VLOOKUP is a vertical lookup.  VLOOKUP is used when you need to perform 
+            calculations that reference a table with a range of values.</p>
+        
+        <p>Let's look at how a VLOOKUP works first.  A VLOOKUP searches down the first column of a table to find the value you want.</p> 
+            
+        <p>For example, lets say we are looking for all the sales people named "Peter Pan".  VLOOKUP will look vertically in the column until it finds all the matches for "Peter Pan". Next
+            it will look across a specified number of columns and return a value in the original cell selected.   This is most commonly used when we need to cross reference incomes or sales with a range.</p>
+        <br>
+        <p>VLOOKUP Function Builder has three required parts</p>
+        <ol>
+            <li>Lookup_value: This is the Value you want to find. Use a cell reference here.</li>
+            <li>Table Array: The entire table you want to look for the matching value.</li>
+            <li>Col_index_num: Which Column number (left to right) should Excel vertically look through.</li>
+        </ol>
+    </main>
+    </body>
+</html>
+

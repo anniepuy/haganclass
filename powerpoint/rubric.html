@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="education, free education, learning" />
+    <meta name="description" content="haganclass.com is the website for a public middle school technology classroom." />
+    <link rel="stylesheet" href="../css/rubric.css"/>
+    <title>PowerPoint Rubric</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">PowerPoint Rubic Form</h1>
+            <p id="description">This form is a digital rubric for student final projects.</p>
+        </header>
+
+       
+            <!--<div id="form-main" tabindex="3">-->
+            <form id="survey-form" onsubmit="return results();" method="post" action="mailto:ann.hagan@okaloosaschools.com">
+                <fieldset>
+                    <label for="name">Student Name</label>
+                    <input type="text" id="name-label" name="name" maxlength="100">
+                    <input type="submit" value="Submit">
+                </fieldset>
+
+                <fieldset>
+                    <label for="email" required>Email</label>
+                    <input type="text" id="email-label" name="email" 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <input type="submit" id="store-email" value="Submit"> 
+                </fieldset>
+
+                <fieldset>
+                    <p>Class Period</p>
+                    <div class="period">
+                        <input type="radio" id="1st-label" name="class" value="1st">
+                        <label for="1st-label">1st Period</label>
+                    </div>
+                    <div class="period">
+                        <input type="radio" id="3rd-label" name="class" value="3rd">
+                        <label for="3rd-label">3rd Period</label>
+                    </div>
+                    <div class="period">
+                        <input type="radio" id="4th-label" name="class" value="4th">
+                        <label for="4th-label">4th Period</label>
+                    </div>
+                    <div class="period">
+                        <input type="radio" id="5th-label" name="class" value="5th">
+                        <label for="5th-label">5th Period</label>
+                    </div>
+                    <div class="period">
+                        <input type="radio" id="6th-label" name="class" value="6th">
+                        <label for="6th-label">6th Period</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Was the file saved as "PP_ME_Lastname"?</legend>
+                    <input type="radio" id="yes_pp_me_lastname" name="pp_me_lastname" value="Yes">
+                    <label for="yes_pp_me_lastname">Yes</label>
+
+                    <input type="radio" id="no_pp_me_lastname" name="pp_me_lastname" value="No">
+                    <label for="no_pp_me_lastname">No</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <p>Title slide with student name?</p>
+                    <label for="yes_title-slide">Yes</label>
+                    <input type="checkbox" id="yes_title-slide" name="yes">
+                    <label for="no_title-slide">No</label>
+                    <input type="checkbox" id="no_title-slide" name="no">
+                </fieldset>
+
+                <fieldset>
+                    <p>Two pictures required - One point per required picture</p>
+                    <label for="pic-num">One</label>
+                    <input type="checkbox" id="pic-num" name="One">
+                    <label for="pic-num">Two</label>
+                    <input type="checkbox" id="pic-num" name="Two">
+                </fieldset>
+
+                <div class="form-group">
+                    <p>Number of slides? - 8 required, one Point per required slide.</p>
+                    <select id="num-slides" name="numslides" class="form-drop" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                        <option value="six">Six</option>
+                        <option value="seven">Seven</option>
+                        <option value="eight">Eight</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Effective use of SmartArt?</p>
+                    <label for="smartart">Yes</label>
+                    <input type="checkbox" id="smartart" name="Yes">
+                    <label for="smartart">No</label>
+                    <input type="checkbox" id="smartart" name="No">
+                </div>
+
+                <div class="form-group">
+                    <p>Overview Slide with Topics?</p>
+                    <label for="topics">Yes</label>
+                    <input type="checkbox" id="topics" name="Yes">
+                    <label for="topics">No</label>
+                    <input type="checkbox" id="topics" name="No">
+                </div>
+
+                <div class="form-group">
+                    <p>Is there an ending slide?</p>
+                    <label for="ending">Yes</label>
+                    <input type="checkbox" id="ending" name="Yes">
+                    <label for="ending">No</label>
+                    <input type="checkbox" id="ending" name="No">
+                </div>
+
+                <div class="form-group">
+                    <p>A different transition on all slides? - 7 required, one point per required transition.</p>
+                    <select id="num-slides" name="numslides" class="form-drop" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                        <option value="six">Six</option>
+                        <option value="seven">Seven</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Was a themed background used?</p>
+                    <label for="background">Yes</label>
+                    <input type="checkbox" id="background" name="Yes">
+                    <label for="background">No</label>
+                    <input type="checkbox" id="background" name="No">
+                </div>
+
+                <div class="form-group">
+                    <p>Spell check and corrections made?</p>
+                    <label for="spell-check">Yes</label>
+                    <input type="checkbox" id="spell-check" name="Yes">
+                    <label for="spell-check">No</label>
+                    <input type="checkbox" id="spell-check" name="No">
+                </div>
+
+                <div class="form-group">
+                    <p>Is slide 3 hidden?</p>
+                    <label for="hidden_slide">Yes</label>
+                    <input type="checkbox" id="hidden_slide" name="Yes">
+                    <label for="hidden_slide">No</label>
+                    <input type="checkbox" id="hidden_slide" name="No">
+                </div>
+
+                <div class="form-group">
+                    <p>Are animations used?</p>
+                    <label for="animations">Yes</label>
+                    <input type="checkbox" id="animations" name="Yes">
+                    <label for="animations">No</label>
+                    <input type="checkbox" id="animations" name="No">
+                </div>
+
+                <div class="form-group">
+                    <p>Was the PowerPoint turned in before 30 April 2020?</p>
+                    <label for="turnin">Yes</label>
+                    <input type="checkbox" id="turnin" name="Yes">
+                    <label for="turnin">No</label>
+                    <input type="checkbox" id="turnin" name="No">
+                </div>
+            </form>
+            <script>
+                function results() {
+                    var name = document.getElementById('name-label').value;
+                    var email = document.getElementById('email-label').value;
+
+                    document.write("<h1>Your PowerPoint Project Submission</h1>");
+                    document.write("<h3>Here is your graded items</h3>");
+
+                    document.write(name + "<br/>");
+                    document.write(period +"br/>");
+                
+                    if (document.getElementById('1st-label').checked){
+                        period = document.getElementById('1st-label').value;
+                    } else if(document.getElementById('3rd-label').checked){
+                        period = document.getElementById('3rd-label').value;
+                    } else if(document.getElementById('4th-label').checked){
+                        period = document.getElementById('4th-label').value;
+                    } else if(document.getElementById('5th-label').checked){
+                        period = document.getElementById('5th-label').value;
+                    } else if(document.getElementById('6th-label').checked){
+                        period = document.getElementById('6th-label').value;
+                    
+                    var title-slide;
+                    switch (document.getElementsByName('pp_me_lastname')) {
+                        case yes:
+                            title-slide = "Yes, there was a title slide";
+                            break;
+                        case no:
+                            title-slide = "No, there was no title slide"
+                            break;
+                    }
+                }
+            </script>
+    </main> 
+</body>
+</html>

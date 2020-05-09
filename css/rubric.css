@@ -1,0 +1,28 @@
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 22px;
+    font-weight: 200;
+    margin: 100px 20%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-items: left;
+    
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    margin-top: 1em;
+    
+}
+
+input {
+    width: 300px;
+    height: 20px;
+}
+
